@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Kartikeya Realty - Your Trusted Real Estate Partner Since 2013</title>
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+    <meta name="description"
+        content="Learn about Kartikeya Realty - a trusted real estate consultancy with pan-India presence since 2013. Our experienced team provides end-to-end property solutions.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F2C59',
+                        secondary: '#D4AF37',
+                        accent: '#333333',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .about-banner {
+            background: linear-gradient(rgba(15, 44, 89, 0.8), rgba(15, 44, 89, 0.8)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #D4AF37;
+        }
+
+        @media (max-width: 768px) {
+            .about-banner {
+                background-position: 65% center;
+            }
+
+            .timeline-item::before {
+                left: -20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-poppins bg-white text-accent">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html"><img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-12 mr-3"></a>
+                <div class="flex flex-col">
+                    <a href="index.html"><span class="text-primary font-bold text-xl sm:block">KARTIKEYA
+                            REALTY</span></a>
+                    <a href="index.html"><span class="text-primary text-center font-bold text-xs sm:block">Property
+                            Consultant</span></a>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="nav-link text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="nav-link text-primary font-medium hover:text-secondary">Investor
+                    Zone</a>
+                <a href="first-time-buyers.html" class="nav-link text-primary font-medium hover:text-secondary">First
+                    Time Buyers</a>
+                <a href="leasing-services.html" class="nav-link text-primary font-medium hover:text-secondary">Leasing
+                    Services</a>
+                <a href="blog.html" class="nav-link text-primary font-medium hover:text-secondary">Blog</a>
+                <a href="about.html" class="nav-link text-primary font-medium hover:text-secondary">About Us</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a id="header-phone" href="tel:+917091651137"
+                    class="bg-secondary text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-primary transition duration-300 hidden sm:block">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl text-primary"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full py-4 px-4 shadow-lg" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="text-primary font-medium hover:text-secondary">Investor Zone</a>
+                <a href="first-time-buyers.html" class="text-primary font-medium hover:text-secondary">First Time
+                    Buyers</a>
+                <a href="leasing-services.html" class="text-primary font-medium hover:text-secondary">Leasing
+                    Services</a>
+                <a href="blog.html" class="text-primary font-medium hover:text-secondary">Blog</a>
+                <a href="about.html" class="text-primary font-medium hover:text-secondary">About Us</a>
+                <a id="header-phone-mob" href="tel:+917091651137"
+                    class="bg-secondary text-white px-3 py-2 rounded-md text-center font-medium hover:bg-primary transition duration-300">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Banner -->
+    <section class="about-banner text-white py-20 md:py-32 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center animate-fade-in">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">About Us</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">Your Trusted Real Estate Partner
+                Since 2013</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Story</h2>
+                    <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-700">
+                        Established in <strong>2013</strong>, Kartikeya Realty began its journey with a simple yet
+                        powerful vision: to bring professionalism, transparency, and trust to the real estate sector.
+                        What started as a modest two-member team has now grown into a <strong>24-member strong,
+                            full-service property consultancy</strong>, serving clients across <strong>Delhi NCR,
+                            Mumbai, Pune, Bhopal, Indore</strong>, and beyond.
+                    </p>
+                </div>
+
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Our Experience</h3>
+                    <div class="relative pl-8 border-l-2 border-secondary">
+                        <div class="timeline-item relative mb-8">
+                            <p class="text-gray-700">
+                                Our founders bring with them years of <strong>ground-level experience with some of
+                                    India's most renowned developers</strong>. Having worked closely with leading names
+                                such as <strong>Kolte Patil, Gera Developments, Rohan Builders, Lodha Group, and VTP
+                                    Realty in Mumbai & Pune</strong>, we've gained in-depth knowledge of the dynamics
+                                that shape urban real estate markets.
+                            </p>
+                        </div>
+                        <div class="timeline-item relative mb-8">
+                            <p class="text-gray-700">
+                                In <strong>Delhi NCR</strong>, we've had the privilege of being associated with major
+                                projects by <strong>Omaxe, Cosmic Group, Jaypee Greens, and Ashiana Housing</strong>.
+                                This exposure across India's key markets has helped us develop a sharp eye for
+                                value-driven opportunities and investor-friendly properties.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-primary mb-6 text-center">What Sets Us Apart</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-light rounded-lg p-6 feature-card transition duration-300">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4 class="text-xl font-bold text-primary">Investor-First Approach</h4>
+                            </div>
+                            <p class="text-gray-700">
+                                We don't just sell properties — we offer strategic guidance. <strong>Investors trust
+                                    Kartikeya Realty</strong> because we back every deal with <strong>research, growth
+                                    projections, and future potential.</strong>
+                            </p>
+                        </div>
+
+                        <div class="bg-light rounded-lg p-6 feature-card transition duration-300">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4 class="text-xl font-bold text-primary">Experienced Team</h4>
+                            </div>
+                            <p class="text-gray-700">
+                                With a passionate team of <strong>24 professionals</strong>, we offer specialized
+                                services in <strong>Residential, Commercial, Land, Farmhouses, and Rental
+                                    Leasing.</strong>
+                            </p>
+                        </div>
+
+                        <div class="bg-light rounded-lg p-6 feature-card transition duration-300">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <h4 class="text-xl font-bold text-primary">Pan-India Market Knowledge</h4>
+                            </div>
+                            <p class="text-gray-700">
+                                Our experience spans metros and emerging Tier-2 cities, making us the right partner for
+                                both first-time buyers and seasoned investors.
+                            </p>
+                        </div>
+
+                        <div class="bg-light rounded-lg p-6 feature-card transition duration-300">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h4 class="text-xl font-bold text-primary">End-to-End Services</h4>
+                            </div>
+                            <p class="text-gray-700">
+                                From site visits and legal checks to negotiation, documentation, and after-sales support
+                                — we're with you at every step.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Our Vision</h3>
+                    <div class="bg-primary text-white rounded-lg p-8">
+                        <p class="text-xl">
+                            To become the most trusted and insightful real estate advisory brand in India — delivering
+                            long-term value to our clients through honest advice, quality listings, and a deep
+                            understanding of the market.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serving Section -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Serving Investors Nationwide</h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Whether you're looking for a <strong>pre-launch investment</strong>, a <strong>commercial
+                    property</strong>, or a <strong>dream home</strong> — Kartikeya Realty ensures you make the right
+                move, always.
+            </p>
+            <a href="about.html"
+                class="inline-block bg-secondary hover:bg-primary text-white font-medium py-3 px-8 rounded-md transition duration-300">
+                Connect With Our Experts
+            </a>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <!-- <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Team</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Meet the dedicated professionals who make Kartikeya Realty a trusted name in real estate.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-light rounded-lg overflow-hidden shadow-md">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-6xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-1">Founder Name</h3>
+                        <p class="text-secondary font-medium mb-4">Founder & CEO</p>
+                        <p class="text-gray-700">
+                            With over 15 years in real estate, our founder brings unmatched expertise in property investment strategies.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-light rounded-lg overflow-hidden shadow-md">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-6xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-1">Co-Founder Name</h3>
+                        <p class="text-secondary font-medium mb-4">Co-Founder & Director</p>
+                        <p class="text-gray-700">
+                            Specializing in commercial properties and land deals with extensive market knowledge.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-light rounded-lg overflow-hidden shadow-md">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-users text-6xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-1">Our Expert Team</h3>
+                        <p class="text-secondary font-medium mb-4">24 Professionals</p>
+                        <p class="text-gray-700">
+                            A diverse team of real estate consultants, legal experts, and customer service professionals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Property Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Our experts are available to discuss your real estate needs</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a id="cta" href="tel:+917091651137"
+                    class="bg-secondary hover:bg-white text-white hover:text-primary font-medium py-3 px-8 rounded-md transition duration-300">
+                    <i class="fas fa-phone mr-2"></i> Call Now
+                </a>
+                <a href="about.html"
+                    class="bg-white hover:bg-secondary text-primary hover:text-white font-medium py-3 px-8 rounded-md transition duration-300">
+                    Send Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-40 mb-4">
+                    <p class="mb-4">Your trusted partner for all real estate needs in Faridabad and NCR region.</p>
+                    <!-- <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary transition duration-300">Home</a></li>
+                        <li><a href="properties.html"
+                                class="hover:text-secondary transition duration-300">Properties</a></li>
+                        <li><a href="investor-zone.html" class="hover:text-secondary transition duration-300">Investor
+                                Zone</a></li>
+                        <li><a href="first-time-buyers.html" class="hover:text-secondary transition duration-300">First
+                                Time Buyers</a></li>
+                        <li><a href="leasing-services.html" class="hover:text-secondary transition duration-300">Leasing
+                                Services</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary transition duration-300">Blog</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition duration-300">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul id="contact-info" class="space-y-2">
+                        <!-- Dynamic contact info will be loaded here -->
+                        <li class="flex items-center">
+                            <i class="fas fa-spinner fa-spin mr-2 text-secondary"></i>
+                            <span>Loading contact information...</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe for property updates and market insights.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your Email"
+                            class="px-4 py-2 w-full rounded-l-md focus:outline-none text-accent">
+                        <button type="submit"
+                            class="bg-secondary hover:bg-white text-white hover:text-secondary px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+                <p>&copy; <span id="year"></span> Kartikeya Realty. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Set current year in footer
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+
+        // Feature card hover effect
+        const featureCards = document.querySelectorAll('.feature-card');
+        featureCards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = '';
+            });
+        });
+
+        async function loadContactInfo() {
+            try {
+                const response = await fetch('api/contact-info.php?active=1');
+                const data = await response.json();
+
+                if (data.success && data.data) {
+                    updateContactDisplay(data.data);
+                    updateHeaderPhone(data.data.phone);
+                } else {
+                    console.error('Failed to load contact info');
+                }
+            } catch (error) {
+                console.error('Error loading contact info:', error);
+            }
+        }
+
+        loadContactInfo();
+
+        // Update contact display in footer
+        function updateContactDisplay(contactData) {
+            const container = document.getElementById('contact-info');
+            const socialContainer = document.getElementById('social-links');
+
+            container.innerHTML = '';
+
+            // Display addresses
+            if (contactData.address) {
+                contactData.address.forEach(addr => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
+                            <span>${addr.value}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // Display phones
+            if (contactData.phone) {
+                contactData.phone.forEach(phone => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-secondary"></i>
+                            <span>${phone.value}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // Display emails
+            if (contactData.email) {
+                contactData.email.forEach(email => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-secondary"></i>
+                            <span>${email.value}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // Update social links
+            // if (contactData.social) {
+            //     socialContainer.innerHTML = '';
+            //     contactData.social.forEach(social => {
+            //         if (social.value && social.value !== '#') {
+            //             const icon = getSocialIcon(social.label.toLowerCase());
+            //             socialContainer.innerHTML += `
+            //                 <a href="${social.value}" target="_blank" class="text-white hover:text-secondary text-xl transition duration-300">
+            //                     <i class="${icon}"></i>
+            //                 </a>
+            //             `;
+            //         }
+            //     });
+            // }
+        }
+
+        // Update header phone number
+        function updateHeaderPhone(phones) {
+            if (phones && phones.length > 0) {
+                const primaryPhone = phones[0];
+                const headerPhone = document.getElementById('header-phone');
+                const headerPhoneMob = document.getElementById('header-phone-mob');
+                const cta = document.getElementById('cta');
+                if (headerPhone) {
+                    headerPhone.href = `tel:${primaryPhone.value}`;
+                    headerPhoneMob.href = `tel:${primaryPhone.value}`;
+                    cta.href = `tel:${primaryPhone.value}`;
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

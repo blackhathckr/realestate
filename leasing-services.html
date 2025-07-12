@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leasing Services | Kartikeya Realty - Commercial & Corporate Leasing Experts</title>
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+    <meta name="description"
+        content="Professional leasing services for offices, retail spaces, and warehouses in Faridabad. Find the perfect space for your business needs.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F2C59',
+                        secondary: '#D4AF37',
+                        accent: '#333333',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .leasing-banner {
+            background: linear-gradient(rgba(15, 44, 89, 0.8), rgba(15, 44, 89, 0.8)), url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80') no-repeat center center/cover;
+        }
+
+        .leasing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .leasing-type-card {
+            transition: all 0.3s ease;
+        }
+
+        .leasing-type-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 768px) {
+            .leasing-banner {
+                background-position: 65% center;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-poppins bg-white text-accent">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html"><img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-12 mr-2"></a>
+                <div class="flex flex-col">
+                    <a href="index.html"><span class="text-primary font-bold text-xl sm:block">KARTIKEYA
+                            REALTY</span></a>
+                    <a href="index.html"><span class="text-primary text-center font-bold text-xs sm:block">Property
+                            Consultant</span></a>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="nav-link text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="nav-link text-primary font-medium hover:text-secondary">Investor
+                    Zone</a>
+                <a href="first-time-buyers.html" class="nav-link text-primary font-medium hover:text-secondary">First
+                    Time Buyers</a>
+                <a href="leasing-services.html" class="nav-link text-primary font-medium hover:text-secondary">Leasing
+                    Services</a>
+                <a href="blog.html" class="nav-link text-primary font-medium hover:text-secondary">Blog</a>
+                <a href="about.html" class="nav-link text-primary font-medium hover:text-secondary">About Us</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a id="header-phone" id="header-phone" href="tel:+917091651137"
+                    class="bg-secondary text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-primary transition duration-300 hidden sm:block">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl text-primary"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full py-4 px-4 shadow-lg" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="text-primary font-medium hover:text-secondary">Investor Zone</a>
+                <a href="first-time-buyers.html" class="text-primary font-medium hover:text-secondary">First Time
+                    Buyers</a>
+                <a href="leasing-services.html" class="text-primary font-medium hover:text-secondary">Leasing
+                    Services</a>
+                <a href="blog.html" class="text-primary font-medium hover:text-secondary">Blog</a>
+                <a href="about.html" class="text-primary font-medium hover:text-secondary">About Us</a>
+                <a id="header-phone-mob" href="tel:+917091651137"
+                    class="bg-secondary text-white px-3 py-2 rounded-md text-center font-medium hover:bg-primary transition duration-300">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Leasing Banner -->
+    <section class="leasing-banner text-white py-20 md:py-32 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center animate-fade-in">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">Premium Leasing Solutions</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">Find the perfect commercial space for
+                your business needs</p>
+            <a href="#available-spaces"
+                class="inline-block bg-secondary hover:bg-white text-white hover:text-primary font-medium py-3 px-8 rounded-md transition duration-300 animate-slide-up">
+                View Available Spaces
+            </a>
+        </div>
+    </section>
+
+    <!-- Leasing Services -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Leasing Services</h2>
+                <p class="text-lg text-accent max-w-2xl mx-auto">Comprehensive leasing solutions for businesses of all
+                    sizes</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="leasing-type-card bg-light rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                            alt="Office Leasing" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Corporate Office Leasing</h3>
+                        <p class="text-gray-600 mb-4">Premium office spaces in prime business locations with flexible
+                            lease terms.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Plug-and-play office solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Custom build-outs available</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Meeting rooms & common areas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="leasing-type-card bg-light rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Retail Leasing" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Retail Space Leasing</h3>
+                        <p class="text-gray-600 mb-4">High-footfall retail locations for shops, showrooms, and
+                            restaurants.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Prime shopping districts</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Mall kiosks to large showrooms</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Flexible lease terms</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="leasing-type-card bg-light rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Warehouse Leasing" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Warehouse & Industrial Leasing</h3>
+                        <p class="text-gray-600 mb-4">Secure, spacious warehouses with excellent transport connectivity.
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Industrial zones & logistics parks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Loading docks & high ceilings</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>24/7 security & CCTV</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Spaces -->
+    <!-- <section id="available-spaces" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Available Leasing Spaces</h2>
+                <p class="text-lg text-accent max-w-2xl mx-auto">Curated selection of premium commercial properties available for lease</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md leasing-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Office Space" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Office</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Premium Office Space - Sector 14</h3>
+                        <p class="text-secondary text-lg font-semibold mb-2">₹85/sq.ft/month</p>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Sector 14, Faridabad</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-vector-square mr-2"></i>
+                                <span>2,500 sq.ft</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-users mr-2"></i>
+                                <span>20-25 Person</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-700"><span class="font-semibold">Features:</span> Furnished, AC, Meeting Rooms, Parking</p>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-md transition duration-300">
+                            Enquire Now
+                        </button>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md leasing-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Retail Space" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Retail</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Ground Floor Retail - Neelam Chowk</h3>
+                        <p class="text-secondary text-lg font-semibold mb-2">₹120/sq.ft/month</p>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Neelam Chowk, Faridabad</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-vector-square mr-2"></i>
+                                <span>1,800 sq.ft</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-door-open mr-2"></i>
+                                <span>3 Entrances</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-700"><span class="font-semibold">Features:</span> High Footfall, Display Windows, Storage</p>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-md transition duration-300">
+                            Enquire Now
+                        </button>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md leasing-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Warehouse" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Warehouse</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Warehouse - Industrial Area</h3>
+                        <p class="text-secondary text-lg font-semibold mb-2">₹25/sq.ft/month</p>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Faridabad Industrial Area</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-vector-square mr-2"></i>
+                                <span>12,000 sq.ft</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-truck mr-2"></i>
+                                <span>2 Loading Docks</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-700"><span class="font-semibold">Features:</span> 24/7 Access, Security, Office Space</p>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-md transition duration-300">
+                            Enquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="about.html" class="inline-block bg-primary hover:bg-secondary text-white font-medium py-3 px-8 rounded-md transition duration-300">
+                    View More Spaces
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Leasing Process -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Simple Leasing Process</h2>
+                <p class="text-lg text-accent max-w-2xl mx-auto">We make commercial leasing straightforward and
+                    hassle-free</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Leasing Process" class="w-full rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="space-y-8">
+                        <div class="flex">
+                            <div
+                                class="flex-shrink-0 bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-4">
+                                1</div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary mb-2">Requirement Assessment</h3>
+                                <p class="text-gray-600">We understand your business needs, budget, and preferred
+                                    locations to shortlist suitable properties.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div
+                                class="flex-shrink-0 bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-4">
+                                2</div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary mb-2">Property Showings</h3>
+                                <p class="text-gray-600">Schedule visits to the best-matched properties at your
+                                    convenience.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div
+                                class="flex-shrink-0 bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-4">
+                                3</div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary mb-2">Lease Negotiation</h3>
+                                <p class="text-gray-600">We negotiate the best terms on your behalf - rent, duration,
+                                    amenities, and fit-out requirements.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div
+                                class="flex-shrink-0 bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-4">
+                                4</div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary mb-2">Documentation & Handover</h3>
+                                <p class="text-gray-600">Our legal team ensures smooth paperwork and timely possession.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Leasing Success Stories</h2>
+                <p class="text-lg max-w-2xl mx-auto">Businesses that found their perfect space through Kartikeya Realty
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white text-accent p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Client"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Amit Khanna</h4>
+                            <p class="text-gray-600">Tech Startup Founder</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Kartikeya Realty found us a perfect office space in Sector 14 that
+                        matched our budget and culture. Their negotiation saved us 15% on the asking rent."</p>
+                    <div class="text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white text-accent p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Client"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Priya Sharma</h4>
+                            <p class="text-gray-600">Boutique Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"As a first-time retailer, I didn't know what to look for in a
+                        commercial lease. Kartikeya's team explained everything and found me a great location in Neelam
+                        Chowk."</p>
+                    <div class="text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white text-accent p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Rahul Gupta</h4>
+                            <p class="text-gray-600">Logistics Company CEO</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"We needed a large warehouse with specific loading requirements.
+                        Kartikeya Realty identified 3 perfect options within our timeline and budget."</p>
+                    <div class="text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Need Commercial Space for Your Business?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Share your requirements and we'll find the perfect space for you
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="about.html"
+                    class="bg-white hover:bg-primary text-secondary hover:text-white font-medium py-3 px-8 rounded-md transition duration-300">
+                    Post Your Requirement
+                </a>
+                <a id="cta" href="tel:+917091651137"
+                    class="bg-transparent hover:bg-white border-2 border-white text-white hover:text-secondary font-medium py-3 px-8 rounded-md transition duration-300">
+                    <i class="fas fa-phone mr-2"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-40 mb-4">
+                    <p class="mb-4">Your trusted partner for all real estate needs in Faridabad and NCR region.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary transition duration-300">Home</a></li>
+                        <li><a href="properties.html"
+                                class="hover:text-secondary transition duration-300">Properties</a></li>
+                        <li><a href="investor-zone.html" class="hover:text-secondary transition duration-300">Investor
+                                Zone</a></li>
+                        <li><a href="first-time-buyers.html" class="hover:text-secondary transition duration-300">First
+                                Time Buyers</a></li>
+                        <li><a href="leasing-services.html" class="hover:text-secondary transition duration-300">Leasing
+                                Services</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary transition duration-300">Blog</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition duration-300">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul id="contact-info" class="space-y-2">
+                        <!-- Dynamic contact info will be loaded here -->
+                        <li class="flex items-center">
+                            <i class="fas fa-spinner fa-spin mr-2 text-secondary"></i>
+                            <span>Loading contact information...</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe for new leasing opportunities and commercial real estate insights.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your Email"
+                            class="px-4 py-2 w-full rounded-l-md focus:outline-none text-accent">
+                        <button type="submit"
+                            class="bg-secondary hover:bg-white text-white hover:text-secondary px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+                <p>&copy; <span id="year"></span> Kartikeya Realty. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Leasing card hover effect
+        const leasingCards = document.querySelectorAll('.leasing-card');
+        leasingCards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+            });
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+
+        // Testimonial card hover effect
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        testimonialCards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'scale(1.03)';
+            });
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = '';
+            });
+        });
+
+        const year = document.getElementById('year');
+        year.innerHTML = new Date().getFullYear();
+
+        async function loadContactInfo() {
+            try {
+                const response = await fetch('api/contact-info.php?active=1');
+                const data = await response.json();
+
+                if (data.success && data.data) {
+                    updateContactDisplay(data.data);
+                    updateHeaderPhone(data.data.phone);
+                } else {
+                    console.error('Failed to load contact info');
+                }
+            } catch (error) {
+                console.error('Error loading contact info:', error);
+            }
+        }
+
+        loadContactInfo();
+
+        // Update contact display in footer
+        function updateContactDisplay(contactData) {
+            const container = document.getElementById('contact-info');
+            const socialContainer = document.getElementById('social-links');
+
+            container.innerHTML = '';
+
+            // Display addresses
+            if (contactData.address) {
+                contactData.address.forEach(addr => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
+                            <span>${addr.value}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // Display phones
+            if (contactData.phone) {
+                contactData.phone.forEach(phone => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-secondary"></i>
+                            <span>${phone.value}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // Display emails
+            if (contactData.email) {
+                contactData.email.forEach(email => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-secondary"></i>
+                            <span>${email.value}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // Update social links
+            // if (contactData.social) {
+            //     socialContainer.innerHTML = '';
+            //     contactData.social.forEach(social => {
+            //         if (social.value && social.value !== '#') {
+            //             const icon = getSocialIcon(social.label.toLowerCase());
+            //             socialContainer.innerHTML += `
+            //                 <a href="${social.value}" target="_blank" class="text-white hover:text-secondary text-xl transition duration-300">
+            //                     <i class="${icon}"></i>
+            //                 </a>
+            //             `;
+            //         }
+            //     });
+            // }
+        }
+
+        // Update header phone number
+        function updateHeaderPhone(phones) {
+            if (phones && phones.length > 0) {
+                const primaryPhone = phones[0];
+                const headerPhone = document.getElementById('header-phone');
+                const headerPhoneMob = document.getElementById('header-phone-mob');
+                const cta = document.getElementById('cta');
+                if (headerPhone) {
+                    headerPhone.href = `tel:${primaryPhone.value}`;
+                    headerPhoneMob.href = `tel:${primaryPhone.value}`;
+                    cta.href = `tel:${primaryPhone.value}`;
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

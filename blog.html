@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate in India: A Growing Investment Opportunity | Kartikeya Realty - Your Trusted Real Estate Partner Since 2013</title>
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+    <meta name="description"
+        content="Explore India's top real estate markets and investment opportunities in metro and tier-2 cities with Kartikeya Realty.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F2C59',
+                        secondary: '#D4AF37',
+                        accent: '#333333',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    spacing: {
+                        '128': '32rem',
+                        '144': '36rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .blog-hero {
+            background: linear-gradient(rgba(15, 44, 89, 0.8), rgba(15, 44, 89, 0.8)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+        }
+
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .highlight-box {
+            border-left: 4px solid #D4AF37;
+        }
+
+        .city-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero {
+                background-position: 65% center;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-poppins bg-white text-accent">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html"><img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-12 mr-2"></a>
+                <div class="flex flex-col">
+                    <a href="index.html"><span class="text-primary font-bold text-xl sm:block">KARTIKEYA
+                            REALTY</span></a>
+                    <a href="index.html"><span class="text-primary text-center font-bold text-xs sm:block">Property
+                            Consultant</span></a>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="nav-link text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="nav-link text-primary font-medium hover:text-secondary">Investor
+                    Zone</a>
+                <a href="first-time-buyers.html" class="nav-link text-primary font-medium hover:text-secondary">First
+                    Time Buyers</a>
+                <a href="leasing-services.html" class="nav-link text-primary font-medium hover:text-secondary">Leasing
+                    Services</a>
+                <a href="blog.html" class="nav-link text-secondary font-medium">Blog</a>
+                <a href="about.html" class="nav-link text-primary font-medium hover:text-secondary">About Us</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a id="header-phone" href="tel:+917091651137"
+                    class="bg-secondary text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-primary transition duration-300 hidden sm:block">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl text-primary"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full py-4 px-4 shadow-lg" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="text-primary font-medium hover:text-secondary">Investor Zone</a>
+                <a href="first-time-buyers.html" class="text-primary font-medium hover:text-secondary">First Time
+                    Buyers</a>
+                <a href="leasing-services.html" class="text-primary font-medium hover:text-secondary">Leasing
+                    Services</a>
+                <a href="blog.html" class="text-secondary font-medium">Blog</a>
+                <a href="about.html" class="text-primary font-medium hover:text-secondary">About Us</a>
+                <a id="header-phone-mob" href="tel:+917091651137"
+                    class="bg-secondary text-white px-3 py-2 rounded-md text-center font-medium hover:bg-primary transition duration-300">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero text-white py-20 md:py-28">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl">
+                <div class="inline-block bg-secondary text-white px-3 py-1 rounded-md text-sm font-medium mb-4">
+                    Real Estate Insights
+                </div>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Real Estate in India: A Growing Investment
+                    Opportunity</h1>
+                <p class="text-lg md:text-xl mb-6">Exploring metro & tier-2 cities for profitable investments</p>
+                <div class="flex items-center text-sm">
+                    <span class="mr-4">Published: <span class="font-medium">June 15, 2023</span></span>
+                    <span>By: <span class="font-medium">Kartikeya Realty Team</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Main Content -->
+                <div class="lg:w-2/3">
+                    <article class="prose max-w-none">
+                        <p class="lead">In a fast-evolving economic landscape, <strong>real estate continues to stand as
+                                one of the most reliable and appreciating investment avenues.</strong> With increasing
+                            urbanization, rising disposable incomes, and a growing appetite for stable long-term assets,
+                            the Indian real estate sector has emerged as a stronghold for investors—<strong>both
+                                seasoned and first-time.</strong></p>
+
+                        <div class="my-10 p-6 bg-light rounded-xl highlight-box">
+                            <h2 class="text-2xl font-bold text-primary mb-4">Why Real Estate Is a Smart Investment
+                                Choice Today</h2>
+                            <p>The Indian realty sector has shown consistent resilience and adaptability. Even during
+                                uncertain times, property ownership remains a core aspiration for most Indians.</p>
+                        </div>
+
+                        <h2 class="text-3xl font-bold text-primary mt-12 mb-6">Top Real Estate Markets in India: What's
+                            Driving Growth?</h2>
+
+                        <!-- Delhi NCR Card -->
+                        <div class="city-card bg-white rounded-xl shadow-md p-6 mb-10 transition duration-300">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="md:w-1/3">
+                                    <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                        alt="Delhi NCR" class="w-full h-48 object-cover rounded-lg">
+                                </div>
+                                <div class="md:w-2/3">
+                                    <h3 class="text-2xl font-bold text-primary mb-3">1. Delhi NCR: The Investment
+                                        Powerhouse</h3>
+                                    <p class="mb-4">Delhi NCR continues to dominate the investment map due to its:</p>
+                                    <ul class="list-disc pl-5 space-y-2 mb-4">
+                                        <li>Rapid infrastructure development (Dwarka Expressway, Noida Airport, Urban
+                                            Extension Road)</li>
+                                        <li>Premium residential & commercial hubs (Gurgaon, Noida, Faridabad)</li>
+                                        <li>Strong rental demand due to corporate density and urban migration</li>
+                                    </ul>
+                                    <div class="bg-primary/10 p-3 rounded-lg">
+                                        <p class="font-semibold text-primary">Best Bet for: <span
+                                                class="font-normal">Commercial leasing, luxury homes, and investment in
+                                                pre-launch residential projects.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mumbai & Pune Card -->
+                        <div class="city-card bg-white rounded-xl shadow-md p-6 mb-10 transition duration-300">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="md:w-1/3">
+                                    <img src="properties/mumbai.jpg"
+                                        alt="Mumbai" class="w-full h-48 object-cover rounded-lg">
+                                </div>
+                                <div class="md:w-2/3">
+                                    <h3 class="text-2xl font-bold text-primary mb-3">2. Mumbai & Pune: Western India's
+                                        Investment Powerhouses</h3>
+                                    <p class="mb-4"><strong>Mumbai</strong> —India's financial capital—offers high
+                                        appreciation potential in areas like Navi Mumbai, Thane, and Mira Road.
+                                        Redevelopment projects and sea-facing homes continue to attract HNIs and NRI
+                                        buyers.</p>
+                                    <p class="mb-4"><strong>Pune</strong>, with its booming IT and education sector, is
+                                        fast becoming the preferred city for millennial homebuyers and investors looking
+                                        for 2–3 BHK apartments in integrated townships.</p>
+                                    <div class="bg-primary/10 p-3 rounded-lg">
+                                        <p class="font-semibold text-primary">Best Bet for: <span
+                                                class="font-normal">Pre-leased commercial properties, mid-segment
+                                                housing, and co-living investments.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tier-2 Cities Section -->
+                        <h2 class="text-3xl font-bold text-primary mt-12 mb-6">Tier-2 Cities: The Silent Movers –
+                            Spotlight on Bhopal & Indore</h2>
+                        <p class="mb-6">While metros continue to offer high-ticket returns, <strong>Tier-2
+                                cities</strong> are quickly emerging as <strong>affordable gold mines for real estate
+                                investors.</strong></p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                            <!-- Bhopal Card -->
+                            <div class="city-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                                <h3 class="text-xl font-bold text-primary mb-3 flex items-center">
+                                    <i class="fas fa-tree text-secondary mr-2"></i> Bhopal – The City of Lakes
+                                </h3>
+                                <ul class="list-disc pl-5 space-y-2 mb-4">
+                                    <li>Rapid development in areas like Kolar Road, Ayodhya Bypass, and Hoshangabad Road
+                                    </li>
+                                    <li>Affordable land prices, perfect for long-term land banking</li>
+                                    <li>Government initiatives boosting infrastructure growth</li>
+                                </ul>
+                            </div>
+
+                            <!-- Indore Card -->
+                            <div class="city-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                                <h3 class="text-xl font-bold text-primary mb-3 flex items-center">
+                                    <i class="fas fa-city text-secondary mr-2"></i> Indore – The Cleanest City
+                                </h3>
+                                <ul class="list-disc pl-5 space-y-2 mb-4">
+                                    <li>Ranked high in urban governance and infrastructure</li>
+                                    <li>Hub for education, IT, and manufacturing</li>
+                                    <li>Upcoming metro and smart city initiatives</li>
+                                    <li>Growing demand for farmhouses and plotted developments</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-primary/10 p-4 rounded-lg mb-10">
+                            <p class="font-semibold text-primary">Best Bet for Tier-2 Cities: <span
+                                    class="font-normal">Early investments in plotted land, residential colonies, and
+                                    affordable rental housing.</span></p>
+                        </div>
+
+                        <!-- Final Thoughts -->
+                        <div class="my-10 p-6 bg-light rounded-xl">
+                            <h2 class="text-2xl font-bold text-primary mb-4">Final Thoughts: The Right Time to Invest Is
+                                Now</h2>
+                            <p>Whether you're an investor looking for capital gains, a buyer hoping to own your first
+                                home, or a business owner seeking a strategic commercial location—<strong>real estate is
+                                    a proven path to wealth creation.</strong></p>
+                            <p class="mt-4">At <strong>Kartikeya Realty,</strong> we specialize in helping investors and
+                                buyers find the right properties—whether it's a farm plot in Bhopal, a 2BHK flat in
+                                Faridabad, or a commercial space in Pune. Our curated listings, expert consultation, and
+                                transparent approach make your journey easier and more profitable.</p>
+                        </div>
+                    </article>
+
+                    <!-- Author Bio -->
+                    <div class="mt-12 p-6 bg-white rounded-xl shadow-md">
+                        <div class="flex items-center">
+                            <div class="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-secondary">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                                    alt="Author" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Kartikeya Realty Team</h4>
+                                <p class="text-gray-600">Real Estate Experts</p>
+                            </div>
+                        </div>
+                        <p class="mt-4">With over 15 years of experience in Indian real estate markets, our team
+                            provides expert insights and personalized property solutions to help you make informed
+                            investment decisions.</p>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:w-1/3">
+                    <div class="bg-light rounded-xl p-6 sticky top-6">
+                        <h3 class="text-xl font-bold text-primary mb-6 pb-2 border-b border-gray-300">Contact Our
+                            Experts</h3>
+                        <p class="mb-6">Ready to explore real estate investment opportunities? Our team is here to guide
+                            you.</p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white p-2 rounded-full mr-3 mt-1">
+                                    <i class="fas fa-phone text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary">Call Us</h4>
+                                    <p class="text-gray-600">7091651137</p>
+                                    <p class="text-gray-600">6290379907</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white p-2 rounded-full mr-3 mt-1">
+                                    <i class="fas fa-envelope text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary">Email</h4>
+                                    <p class="text-gray-600">property@kartikeyarealty.in</p>
+                                    <p class="text-gray-600">careers@kartikeyarealty.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white p-2 rounded-full mr-3 mt-1">
+                                    <i class="fab fa-whatsapp text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary">WhatsApp</h4>
+                                    <p class="text-gray-600">Chat with our experts</p>
+                                    <a href="#" class="text-secondary hover:underline">Click to Chat</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="about.html"
+                            class="mt-6 inline-block w-full bg-primary hover:bg-secondary text-white text-center font-medium py-3 px-6 rounded-lg transition duration-300">
+                            Schedule Consultation
+                        </a>
+                    </div>
+
+                    <!-- Related Posts -->
+                    <div class="mt-8 bg-light rounded-xl p-6">
+                        <h3 class="text-xl font-bold text-primary mb-6 pb-2 border-b border-gray-300">Related Articles
+                        </h3>
+                        <div class="space-y-4">
+                            <a href="#" class="block group">
+                                <div class="flex items-start">
+                                    <div class="w-16 h-16 rounded overflow-hidden mr-3 flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80"
+                                            alt="Related Post" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-primary group-hover:text-secondary transition duration-300">
+                                            First-Time Home Buyer's Guide in Faridabad</h4>
+                                        <p class="text-sm text-gray-600">June 5, 2023</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="block group">
+                                <div class="flex items-start">
+                                    <div class="w-16 h-16 rounded overflow-hidden mr-3 flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                            alt="Related Post" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-primary group-hover:text-secondary transition duration-300">
+                                            Commercial Real Estate Trends in NCR</h4>
+                                        <p class="text-sm text-gray-600">May 22, 2023</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="block group">
+                                <div class="flex items-start">
+                                    <div class="w-16 h-16 rounded overflow-hidden mr-3 flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                            alt="Related Post" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-primary group-hover:text-secondary transition duration-300">
+                                            Investing in Farmhouses: What You Need to Know</h4>
+                                        <p class="text-sm text-gray-600">April 30, 2023</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Real Estate Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Our experts are here to guide you through every step of your
+                property investment.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="about.html"
+                    class="bg-white hover:bg-primary text-secondary hover:text-white font-medium py-3 px-8 rounded-lg transition duration-300">
+                    Get Free Consultation
+                </a>
+                <a id="cta" href="tel:+917091651137"
+                    class="bg-transparent hover:bg-white border-2 border-white text-white hover:text-secondary font-medium py-3 px-8 rounded-lg transition duration-300">
+                    <i class="fas fa-phone mr-2"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-40 mr-3">
+                        <span class="text-xl font-bold">KARTIKEYA REALTY</span>
+                    </div>
+                    <p class="mb-6">Your trusted partner for all real estate needs in Faridabad and NCR region since
+                        2008.</p>
+                    <!-- <div class="flex space-x-4">
+                        <a href="#"
+                            class="text-white hover:text-secondary text-xl w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:border-secondary transition duration-300"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="text-white hover:text-secondary text-xl w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:border-secondary transition duration-300"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="text-white hover:text-secondary text-xl w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:border-secondary transition duration-300"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="text-white hover:text-secondary text-xl w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:border-secondary transition duration-300"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-secondary transition duration-300">Home</a></li>
+                        <li><a href="properties.html"
+                                class="hover:text-secondary transition duration-300">Properties</a></li>
+                        <li><a href="investor-zone.html" class="hover:text-secondary transition duration-300">Investor
+                                Zone</a></li>
+                        <li><a href="first-time-buyers.html" class="hover:text-secondary transition duration-300">First
+                                Time Buyers</a></li>
+                        <li><a href="leasing-services.html" class="hover:text-secondary transition duration-300">Leasing
+                                Services</a></li>
+                        <li><a href="blog.html" class="text-secondary transition duration-300">Blog</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition duration-300">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul id="contact-info" class="space-y-2">
+                        <!-- Dynamic contact info will be loaded here -->
+                        <li class="flex items-center">
+                            <i class="fas fa-spinner fa-spin mr-2 text-secondary"></i>
+                            <span>Loading contact information...</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Newsletter</h3>
+                    <p class="mb-4">Subscribe for real estate insights and property updates.</p>
+                    <form class="flex flex-col space-y-3">
+                        <input type="email" placeholder="Your Email"
+                            class="px-4 py-3 rounded-md focus:outline-none text-accent">
+                        <button type="submit"
+                            class="bg-secondary hover:bg-white text-white hover:text-secondary border-2 border-white font-medium py-3 px-4 rounded-md transition duration-300 flex items-center justify-center">
+                            Subscribe <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Kartikeya Realty. All Rights Reserved. | <a href="#" class="hover:text-secondary">Privacy
+                        Policy</a> | <a href="#" class="hover:text-secondary">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // City card hover effect
+        const cityCards = document.querySelectorAll('.city-card');
+        cityCards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+            });
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+
+        async function loadContactInfo() {
+            try {
+                const response = await fetch('api/contact-info.php?active=1');
+                const data = await response.json();
+
+                if (data.success && data.data) {
+                    updateContactDisplay(data.data);
+                    updateHeaderPhone(data.data.phone);
+                } else {
+                    console.error('Failed to load contact info');
+                }
+            } catch (error) {
+                console.error('Error loading contact info:', error);
+            }
+        }
+
+        loadContactInfo();
+
+        // Update contact display in footer
+        function updateContactDisplay(contactData) {
+            const container = document.getElementById('contact-info');
+            const socialContainer = document.getElementById('social-links');
+
+            container.innerHTML = '';
+
+            // Display addresses
+            if (contactData.address) {
+                contactData.address.forEach(addr => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
+                            <span>${addr.value}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // Display phones
+            if (contactData.phone) {
+                contactData.phone.forEach(phone => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-secondary"></i>
+                            <span>${phone.value}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // Display emails       
+            if (contactData.email) {
+                contactData.email.forEach(email => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-secondary"></i>
+                            <span>${email.value}</span>
+                        </li>
+                    `;
+                });
+            }
+
+            // Update social links
+            // if (contactData.social) {
+            //     socialContainer.innerHTML = '';
+            //     contactData.social.forEach(social => {
+            //         if (social.value && social.value !== '#') {
+            //             const icon = getSocialIcon(social.label.toLowerCase());
+            //             socialContainer.innerHTML += `
+            //                 <a href="${social.value}" target="_blank" class="text-white hover:text-secondary text-xl transition duration-300">
+            //                     <i class="${icon}"></i>
+            //                 </a>
+            //             `;
+            //         }
+            //     });
+            // }
+        }
+
+        // Update header phone number
+        function updateHeaderPhone(phones) {
+            if (phones && phones.length > 0) {
+                const primaryPhone = phones[0];
+                const headerPhone = document.getElementById('header-phone');
+                const headerPhoneMob = document.getElementById('header-phone-mob');
+                const cta = document.getElementById('cta');
+                if (headerPhone) {
+                    headerPhone.href = `tel:${primaryPhone.value}`;
+                    headerPhoneMob.href = `tel:${primaryPhone.value}`;
+                    cta.href = `tel:${primaryPhone.value}`;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

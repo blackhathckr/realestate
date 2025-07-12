@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Time Buyers | Kartikeya Realty - Your Dream Home Awaits</title>
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+    <meta name="description" content="Comprehensive guide for first-time home buyers in Faridabad. Get expert advice on home loans, legal process, and finding your perfect home.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F2C59',
+                        secondary: '#D4AF37',
+                        accent: '#333333',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .first-time-banner {
+            background: linear-gradient(rgba(15, 44, 89, 0.8), rgba(15, 44, 89, 0.8)), url('https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+        }
+        .guide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .feature-icon {
+            transition: all 0.3s ease;
+        }
+        .feature-box:hover .feature-icon {
+            transform: scale(1.1);
+            color: #D4AF37;
+        }
+        .loan-calculator {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .first-time-banner {
+                background-position: 65% center;
+            }
+        }
+    </style>
+</head>
+<body class="font-poppins bg-white text-accent">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html"><img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-12 mr-3"></a>
+                <div class="flex flex-col">
+                    <a href="index.html"><span class="text-primary font-bold text-xl sm:block">KARTIKEYA REALTY</span></a>
+                    <a href="index.html"><span class="text-primary text-center font-bold text-xs sm:block">Property Consultant</span></a>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="nav-link text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="nav-link text-primary font-medium hover:text-secondary">Investor Zone</a>
+                <a href="first-time-buyers.html" class="nav-link text-primary font-medium hover:text-secondary">First Time Buyers</a>
+                <a href="leasing-services.html" class="nav-link text-primary font-medium hover:text-secondary">Leasing Services</a>
+                <a href="blog.html" class="nav-link text-primary font-medium hover:text-secondary">Blog</a>
+                <a href="about.html" class="nav-link text-primary font-medium hover:text-secondary">About Us</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <a id="header-phone" href="tel:+917091651137" class="bg-secondary text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-primary transition duration-300 hidden sm:block">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl text-primary"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full py-4 px-4 shadow-lg" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="text-primary font-medium hover:text-secondary">Investor Zone</a>
+                <a href="first-time-buyers.html" class="text-primary font-medium hover:text-secondary">First Time Buyers</a>
+                <a href="leasing-services.html" class="text-primary font-medium hover:text-secondary">Leasing Services</a>
+                <a href="blog.html" class="text-primary font-medium hover:text-secondary">Blog</a>
+                <a href="about.html" class="text-primary font-medium hover:text-secondary">About Us</a>
+                <a id="header-phone-mob" href="tel:+917091651137" class="bg-secondary text-white px-3 py-2 rounded-md text-center font-medium hover:bg-primary transition duration-300">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- First Time Buyer Banner -->
+    <section class="first-time-banner text-white py-20 md:py-32 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center animate-fade-in">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">Your Dream Home Awaits</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">Comprehensive guidance for first-time home buyers in Faridabad</p>
+            <a href="#home-buying-guide" class="inline-block bg-secondary hover:bg-white text-white hover:text-primary font-medium py-3 px-8 rounded-md transition duration-300 animate-slide-up">
+                Start Your Journey
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Why First-Time Buyers Choose Us</h2>
+                <p class="text-lg text-accent max-w-2xl mx-auto">We make the home buying process simple, transparent, and stress-free</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-box p-6 rounded-lg bg-light hover:shadow-lg transition duration-300">
+                    <div class="feature-icon bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hand-holding-usd text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Loan Assistance</h3>
+                    <p class="text-gray-600 text-center">We partner with top banks to get you the best home loan rates with quick approvals.</p>
+                </div>
+                
+                <div class="feature-box p-6 rounded-lg bg-light hover:shadow-lg transition duration-300">
+                    <div class="feature-icon bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-file-contract text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Legal Support</h3>
+                    <p class="text-gray-600 text-center">Our legal team verifies all documents and ensures smooth registration process.</p>
+                </div>
+                
+                <div class="feature-box p-6 rounded-lg bg-light hover:shadow-lg transition duration-300">
+                    <div class="feature-icon bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-home text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Post-Purchase Support</h3>
+                    <p class="text-gray-600 text-center">From interior design to maintenance, we're here even after you get the keys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Buying Guide -->
+    <section id="home-buying-guide" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">First-Time Home Buyer's Guide</h2>
+                <p class="text-lg text-accent max-w-2xl mx-auto">Everything you need to know to make an informed decision</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md guide-card transition duration-300">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Budget Planning" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-primary text-white text-center py-2 font-bold">Step 1</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Determine Your Budget</h3>
+                        <p class="text-gray-600 mb-4">Understand how much you can afford including down payment, EMI, registration fees and other costs.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Calculate your EMI comfort zone</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Factor in 5-7% for additional costs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Consider future expenses</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md guide-card transition duration-300">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Location Selection" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-primary text-white text-center py-2 font-bold">Step 2</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Choose the Right Location</h3>
+                        <p class="text-gray-600 mb-4">Select a neighborhood that fits your lifestyle and has good growth potential.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Proximity to workplace/schools</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Future infrastructure projects</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Neighborhood safety & amenities</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md guide-card transition duration-300">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Property Selection" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-primary text-white text-center py-2 font-bold">Step 3</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Select Your Property</h3>
+                        <p class="text-gray-600 mb-4">Find a home that meets your current needs and has good resale value.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Builder reputation & quality</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Floor plan & natural light</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Maintenance & society rules</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md guide-card transition duration-300">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Loan Process" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-primary text-white text-center py-2 font-bold">Step 4</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Home Loan Process</h3>
+                        <p class="text-gray-600 mb-4">Navigate the loan application and approval process smoothly.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Document preparation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Comparing interest rates</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Understanding loan terms</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md guide-card transition duration-300">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Legal Verification" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-primary text-white text-center py-2 font-bold">Step 5</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Legal Verification</h3>
+                        <p class="text-gray-600 mb-4">Ensure the property has clear titles and all necessary approvals.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Title deed verification</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Approval plans & NOCs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Encumbrance certificate</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Step 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md guide-card transition duration-300">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Registration" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-primary text-white text-center py-2 font-bold">Step 6</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Registration & Possession</h3>
+                        <p class="text-gray-600 mb-4">Complete the final steps to make the property officially yours.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Stamp duty & registration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Utility transfers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mr-2 mt-1"></i>
+                                <span>Final inspection & handover</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Calculator -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-primary text-white rounded-lg p-8 loan-calculator">
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+                        <h2 class="text-3xl font-bold mb-4">Home Loan Calculator</h2>
+                        <p class="mb-6">Estimate your monthly EMI and understand your repayment schedule.</p>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block mb-2">Loan Amount (₹)</label>
+                                <input type="range" min="500000" max="50000000" step="100000" value="5000000" class="w-full" id="loanAmount">
+                                <div class="flex justify-between mt-2">
+                                    <span>5L</span>
+                                    <span id="loanAmountValue">50L</span>
+                                    <span>5Cr</span>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Interest Rate (%)</label>
+                                <input type="range" min="6" max="15" step="0.1" value="8.5" class="w-full" id="interestRate">
+                                <div class="flex justify-between mt-2">
+                                    <span>6%</span>
+                                    <span id="interestRateValue">8.5%</span>
+                                    <span>15%</span>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label class="block mb-2">Loan Tenure (Years)</label>
+                                <input type="range" min="5" max="30" step="1" value="20" class="w-full" id="loanTenure">
+                                <div class="flex justify-between mt-2">
+                                    <span>5</span>
+                                    <span id="loanTenureValue">20</span>
+                                    <span>30</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="lg:w-1/2 bg-white text-accent rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-primary mb-6">Your EMI Estimate</h3>
+                        <div class="flex justify-between items-center mb-4 pb-4 border-b">
+                            <span class="font-medium">Monthly EMI</span>
+                            <span class="text-2xl font-bold text-secondary" id="emiAmount">₹38,591</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span>Principal Amount</span>
+                                <span id="principalAmount">₹50,00,000</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Total Interest</span>
+                                <span id="totalInterest">₹42,61,840</span>
+                            </div>
+                            <div class="flex justify-between font-bold">
+                                <span>Total Payment</span>
+                                <span id="totalPayment">₹92,61,840</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-3 rounded-md mt-6 transition duration-300">
+                            Get Pre-Approved
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">First-Time Buyer FAQs</h2>
+                <p class="text-lg text-accent max-w-2xl mx-auto">Answers to common questions from first-time home buyers</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-medium text-lg focus:outline-none flex justify-between items-center">
+                        <span>How much down payment do I need for a home loan?</span>
+                        <i class="fas fa-plus text-secondary"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-700">Typically, banks finance up to 80-90% of the property value, so you'll need to arrange 10-20% as down payment. For example, on a ₹50 lakh property, you would need ₹5-10 lakh as down payment. Some government schemes may offer higher financing for first-time buyers.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-medium text-lg focus:outline-none flex justify-between items-center">
+                        <span>What additional costs should I budget for?</span>
+                        <i class="fas fa-plus text-secondary"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-700">Beyond the property price, budget for:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li>Stamp duty and registration (5-7% of property value)</li>
+                            <li>Legal and documentation fees (₹20,000-₹50,000)</li>
+                            <li>Interior work and furnishings (₹5-15 lakh depending on size)</li>
+                            <li>Maintenance deposit (varies by society)</li>
+                            <li>Moving costs and utility connections</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-medium text-lg focus:outline-none flex justify-between items-center">
+                        <span>How do I choose between ready-to-move and under-construction?</span>
+                        <i class="fas fa-plus text-secondary"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-700">Ready-to-move properties offer immediate occupancy but may be more expensive. Under-construction properties are typically 10-20% cheaper but carry completion risk. Consider:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li>Your timeline for moving in</li>
+                            <li>Builder's track record for under-construction projects</li>
+                            <li>Payment plan flexibility</li>
+                            <li>Price difference and appreciation potential</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-medium text-lg focus:outline-none flex justify-between items-center">
+                        <span>What documents should I verify before buying?</span>
+                        <i class="fas fa-plus text-secondary"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-700">Essential documents to verify include:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li>Title deed and chain of ownership</li>
+                            <li>Approved building plans and completion certificate</li>
+                            <li>Encumbrance certificate (last 30 years)</li>
+                            <li>Property tax receipts</li>
+                            <li>Society NOC (for apartments)</li>
+                            <li>RERA registration for new projects</li>
+                        </ul>
+                        <p class="mt-3 text-gray-700">We recommend engaging a lawyer to verify all documents.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-medium text-lg focus:outline-none flex justify-between items-center">
+                        <span>How can I improve my home loan eligibility?</span>
+                        <i class="fas fa-plus text-secondary"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-700">To increase your loan eligibility:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li>Maintain a credit score above 750</li>
+                            <li>Reduce existing debts (credit cards, other loans)</li>
+                            <li>Include all income sources (bonuses, rentals, etc.)</li>
+                            <li>Add a co-applicant with good income</li>
+                            <li>Choose a longer tenure (reduces EMI burden)</li>
+                            <li>Show stable employment history (2+ years preferred)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Find Your Dream Home?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Our first-time buyer specialists will guide you through every step of the process.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="about.html" class="bg-white hover:bg-secondary text-primary hover:text-white font-medium py-3 px-8 rounded-md transition duration-300">
+                    Talk to Our Experts
+                </a>
+                <a id="cta" href="tel:+917091651137" class="bg-transparent hover:bg-white border-2 border-white text-white hover:text-secondary font-medium py-3 px-8 rounded-md transition duration-300">
+                    <i class="fas fa-phone mr-2"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-40 mb-4">
+                    <p class="mb-4">Your trusted partner for all real estate needs in Faridabad and NCR region.</p>
+                    <!-- <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary transition duration-300">Home</a></li>
+                        <li><a href="properties.html" class="hover:text-secondary transition duration-300">Properties</a></li>
+                        <li><a href="investor-zone.html" class="hover:text-secondary transition duration-300">Investor Zone</a></li>
+                        <li><a href="first-time-buyers.html" class="hover:text-secondary transition duration-300">First Time Buyers</a></li>
+                        <li><a href="leasing-services.html" class="hover:text-secondary transition duration-300">Leasing Services</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary transition duration-300">Blog</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition duration-300">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul id="contact-info" class="space-y-2">
+                        <!-- Dynamic contact info will be loaded here -->
+                        <li class="flex items-center">
+                            <i class="fas fa-spinner fa-spin mr-2 text-secondary"></i>
+                            <span>Loading contact information...</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe for first-time buyer tips and new property alerts.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your Email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-accent">
+                        <button type="submit" class="bg-secondary hover:bg-white text-white hover:text-secondary px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+                <p>&copy; <span id="year"></span> Kartikeya Realty. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Loan Calculator Functionality
+        const loanAmount = document.getElementById('loanAmount');
+        const interestRate = document.getElementById('interestRate');
+        const loanTenure = document.getElementById('loanTenure');
+        const loanAmountValue = document.getElementById('loanAmountValue');
+        const interestRateValue = document.getElementById('interestRateValue');
+        const loanTenureValue = document.getElementById('loanTenureValue');
+        const emiAmount = document.getElementById('emiAmount');
+        const principalAmount = document.getElementById('principalAmount');
+        const totalInterest = document.getElementById('totalInterest');
+        const totalPayment = document.getElementById('totalPayment');
+
+        function formatCurrency(amount) {
+            return '₹' + amount.toLocaleString('en-IN');
+        }
+
+        function calculateEMI() {
+            const principal = parseFloat(loanAmount.value);
+            const rate = parseFloat(interestRate.value) / 1200; // Monthly interest rate
+            const tenure = parseFloat(loanTenure.value) * 12; // Months
+            
+            const emi = principal * rate * Math.pow(1 + rate, tenure) / (Math.pow(1 + rate, tenure) - 1);
+            const total = emi * tenure;
+            const interest = total - principal;
+            
+            loanAmountValue.textContent = formatCurrency(principal);
+            interestRateValue.textContent = interestRate.value + '%';
+            loanTenureValue.textContent = loanTenure.value + ' years';
+            emiAmount.textContent = formatCurrency(Math.round(emi));
+            principalAmount.textContent = formatCurrency(principal);
+            totalInterest.textContent = formatCurrency(Math.round(interest));
+            totalPayment.textContent = formatCurrency(Math.round(total));
+        }
+
+        // Initialize calculator
+        calculateEMI();
+
+        // Update calculator on input change
+        loanAmount.addEventListener('input', calculateEMI);
+        interestRate.addEventListener('input', calculateEMI);
+        loanTenure.addEventListener('input', calculateEMI);
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+            });
+        });
+
+        // Guide card hover effect
+        const guideCards = document.querySelectorAll('.guide-card');
+        guideCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+
+        const year = document.getElementById('year');
+        year.innerHTML = new Date().getFullYear();
+
+        
+
+        async function loadContactInfo() {
+            try {
+                const response = await fetch('api/contact-info.php?active=1');
+                const data = await response.json();
+                
+                if (data.success && data.data) {
+                    updateContactDisplay(data.data);
+                    updateHeaderPhone(data.data.phone);
+                } else {
+                    console.error('Failed to load contact info');
+                }
+            } catch (error) {
+                console.error('Error loading contact info:', error);
+            }
+        }
+
+        loadContactInfo();
+
+        // Update contact display in footer
+        function updateContactDisplay(contactData) {
+            const container = document.getElementById('contact-info');
+            const socialContainer = document.getElementById('social-links');
+            
+            container.innerHTML = '';
+            
+            // Display addresses
+            if (contactData.address) {
+                contactData.address.forEach(addr => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
+                            <span>${addr.value}</span>
+                        </li>
+                    `;
+                });
+            }
+            
+            // Display phones
+            if (contactData.phone) {
+                contactData.phone.forEach(phone => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-secondary"></i>
+                            <span>${phone.value}</span>
+                        </li>
+                    `;
+                });
+            }
+            
+            // Display emails
+            if (contactData.email) {
+                contactData.email.forEach(email => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-secondary"></i>
+                            <span>${email.value}</span>
+                        </li>
+                    `;
+                });
+            }
+            
+            // Update social links
+            // if (contactData.social) {
+            //     socialContainer.innerHTML = '';
+            //     contactData.social.forEach(social => {
+            //         if (social.value && social.value !== '#') {
+            //             const icon = getSocialIcon(social.label.toLowerCase());
+            //             socialContainer.innerHTML += `
+            //                 <a href="${social.value}" target="_blank" class="text-white hover:text-secondary text-xl transition duration-300">
+            //                     <i class="${icon}"></i>
+            //                 </a>
+            //             `;
+            //         }
+            //     });
+            // }
+        }
+
+        // Update header phone number
+        function updateHeaderPhone(phones) {
+            if (phones && phones.length > 0) {
+                const primaryPhone = phones[0];
+                const headerPhone = document.getElementById('header-phone');
+                const headerPhoneMob = document.getElementById('header-phone-mob');
+                const cta = document.getElementById('cta');
+                if (headerPhone) {
+                    headerPhone.href = `tel:${primaryPhone.value}`;
+                    headerPhoneMob.href = `tel:${primaryPhone.value}`;
+                    cta.href = `tel:${primaryPhone.value}`;
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Zone | Kartikeya Realty - High ROI Real Estate Investments</title>
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+    <meta name="description" content="Exclusive real estate investment opportunities with high ROI in Faridabad and NCR region. Curated deals for serious investors.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F2C59',
+                        secondary: '#D4AF37',
+                        accent: '#333333',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .investor-banner {
+            background: linear-gradient(rgba(15, 44, 89, 0.8), rgba(15, 44, 89, 0.8)), url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+        }
+        .investment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .roi-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(212, 175, 55, 0.9);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .feature-icon {
+            transition: all 0.3s ease;
+        }
+        .feature-box:hover .feature-icon {
+            transform: scale(1.1);
+            color: #D4AF37;
+        }
+        @media (max-width: 768px) {
+            .investor-banner {
+                background-position: 65% center;
+            }
+        }
+    </style>
+</head>
+<body class="font-poppins bg-white text-accent">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html"><img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-12 mr-2"></a>
+                <div class="flex flex-col">
+                    <a href="index.html"><span class="text-primary font-bold text-xl sm:block">KARTIKEYA REALTY</span></a>
+                    <a href="index.html"><span class="text-primary text-center font-bold text-xs sm:block">Property Consultant</span></a>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="nav-link text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="nav-link text-primary font-medium hover:text-secondary">Investor Zone</a>
+                <a href="first-time-buyers.html" class="nav-link text-primary font-medium hover:text-secondary">First Time Buyers</a>
+                <a href="leasing-services.html" class="nav-link text-primary font-medium hover:text-secondary">Leasing Services</a>
+                <a href="blog.html" class="nav-link text-primary font-medium hover:text-secondary">Blog</a>
+                <a href="about.html" class="nav-link text-primary font-medium hover:text-secondary">About Us</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <a id="header-phone" href="tel:+917091651137" class="bg-secondary text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-primary transition duration-300 hidden sm:block">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl text-primary"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full py-4 px-4 shadow-lg" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-primary font-medium hover:text-secondary">Home</a>
+                <a href="properties.html" class="text-primary font-medium hover:text-secondary">Properties</a>
+                <a href="investor-zone.html" class="text-primary font-medium hover:text-secondary">Investor Zone</a>
+                <a href="first-time-buyers.html" class="text-primary font-medium hover:text-secondary">First Time Buyers</a>
+                <a href="leasing-services.html" class="text-primary font-medium hover:text-secondary">Leasing Services</a>
+                <a href="blog.html" class="text-primary font-medium hover:text-secondary">Blog</a>
+                <a href="about.html" class="text-primary font-medium hover:text-secondary">About Us</a>
+                <a id="header-phone-mob" href="tel:+917091651137" class="bg-secondary text-white px-3 py-2 rounded-md text-center font-medium hover:bg-primary transition duration-300">
+                    <i class="fas fa-phone mr-1"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Investor Banner -->
+    <section class="investor-banner text-white py-20 md:py-32 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center animate-fade-in">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">Exclusive Investment Opportunities</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">Curated high-ROI real estate deals for serious investors</p>
+            <a href="#investment-opportunities" class="inline-block bg-secondary hover:bg-white text-white hover:text-primary font-medium py-3 px-8 rounded-md transition duration-300 animate-slide-up">
+                View Investment Deals
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Invest Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Why Invest in Faridabad Real Estate?</h2>
+                <p class="text-lg text-accent max-w-2xl mx-auto">Faridabad offers exceptional growth potential with its strategic location and upcoming infrastructure projects.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-box p-6 rounded-lg bg-light hover:shadow-lg transition duration-300">
+                    <div class="feature-icon bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">High Appreciation Potential</h3>
+                    <p class="text-gray-600 text-center">Properties in Faridabad have shown consistent 12-15% annual appreciation over the past 5 years.</p>
+                </div>
+                
+                <div class="feature-box p-6 rounded-lg bg-light hover:shadow-lg transition duration-300">
+                    <div class="feature-icon bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-road text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Infrastructure Growth</h3>
+                    <p class="text-gray-600 text-center">New expressways, metro expansion, and commercial hubs driving property values upward.</p>
+                </div>
+                
+                <div class="feature-box p-6 rounded-lg bg-light hover:shadow-lg transition duration-300">
+                    <div class="feature-icon bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-percentage text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3 text-center">Rental Yields</h3>
+                    <p class="text-gray-600 text-center">Commercial properties offering 8-10% rental yields, among the highest in NCR region.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Opportunities -->
+    <!-- <section id="investment-opportunities" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Curated Investment Opportunities</h2>
+                <p class="text-lg text-accent max-w-2xl mx-auto">Handpicked properties with verified ROI potential and growth projections.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               
+                <div class="bg-white rounded-lg overflow-hidden shadow-md investment-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pre-leased Commercial" class="w-full h-64 object-cover">
+                        <div class="roi-badge">Projected ROI: 9.5%</div>
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Pre-leased</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Pre-leased Retail Space</h3>
+                        <p class="text-secondary text-lg font-semibold mb-2">₹2.1 Cr</p>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Neelam Chowk, Faridabad</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-700 mb-2"><span class="font-semibold">Tenant:</span> National Retail Chain (5-year lease)</p>
+                            <p class="text-gray-700"><span class="font-semibold">Rental Yield:</span> ₹1.65 Lakhs/month</p>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-md transition duration-300">
+                            Get Detailed Project Report
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="bg-white rounded-lg overflow-hidden shadow-md investment-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Land Parcel" class="w-full h-64 object-cover">
+                        <div class="roi-badge">Projected ROI: 18-22%</div>
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Land Bank</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Land Parcel - Greater Faridabad</h3>
+                        <p class="text-secondary text-lg font-semibold mb-2">₹4.75 Cr</p>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Greater Faridabad</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-700 mb-2"><span class="font-semibold">Area:</span> 1200 sq.yd (Approx 1 Acre)</p>
+                            <p class="text-gray-700"><span class="font-semibold">Zoning:</span> Mixed-Use Development Approved</p>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-md transition duration-300">
+                            Get Detailed Project Report
+                        </button>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md investment-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Apartment Complex" class="w-full h-64 object-cover">
+                        <div class="roi-badge">Projected ROI: 12-15%</div>
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Construction</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Luxury Apartment Project</h3>
+                        <p class="text-secondary text-lg font-semibold mb-2">₹1.2 Cr - ₹2.8 Cr</p>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Sector 89, Faridabad</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-700 mb-2"><span class="font-semibold">Units:</span> 2BHK & 3BHK Available</p>
+                            <p class="text-gray-700"><span class="font-semibold">Completion:</span> Dec 2024 (30% Booked)</p>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-md transition duration-300">
+                            Get Detailed Project Report
+                        </button>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md investment-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Farmhouse" class="w-full h-64 object-cover">
+                        <div class="roi-badge">Projected ROI: 10-12%</div>
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Rental Income</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Farmhouse Cluster</h3>
+                        <p class="text-secondary text-lg font-semibold mb-2">₹1.5 Cr - ₹3.2 Cr</p>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Ballabgarh, Faridabad</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-700 mb-2"><span class="font-semibold">Size:</span> 1-2 Acre Plots</p>
+                            <p class="text-gray-700"><span class="font-semibold">Rental Potential:</span> ₹25k-₹50k/weekend</p>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-md transition duration-300">
+                            Get Detailed Project Report
+                        </button>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md investment-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Warehouse" class="w-full h-64 object-cover">
+                        <div class="roi-badge">Projected ROI: 11-14%</div>
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Industrial</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Warehouse Complex</h3>
+                        <p class="text-secondary text-lg font-semibold mb-2">₹6.8 Cr</p>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Faridabad Industrial Area</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-700 mb-2"><span class="font-semibold">Area:</span> 15,000 sq.ft</p>
+                            <p class="text-gray-700"><span class="font-semibold">Features:</span> 24/7 Security, Loading Docks</p>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-md transition duration-300">
+                            Get Detailed Project Report
+                        </button>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md investment-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Office Space" class="w-full h-64 object-cover">
+                        <div class="roi-badge">Projected ROI: 8-10%</div>
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Commercial</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Office Tower Floors</h3>
+                        <p class="text-secondary text-lg font-semibold mb-2">₹3.5 Cr - ₹5.2 Cr</p>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Sector 18, Faridabad</span>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-700 mb-2"><span class="font-semibold">Size:</span> 2000-3000 sq.ft per floor</p>
+                            <p class="text-gray-700"><span class="font-semibold">Occupancy:</span> 85% Pre-leased</p>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-md transition duration-300">
+                            Get Detailed Project Report
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Investment Guide -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Free Investor Guide</h2>
+                    <p class="text-xl mb-6">Download our comprehensive guide to real estate investing in Faridabad and NCR region.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary mr-3 text-xl"></i>
+                            <span>Market trends and analysis</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary mr-3 text-xl"></i>
+                            <span>ROI comparison by property type</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary mr-3 text-xl"></i>
+                            <span>Legal and tax considerations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary mr-3 text-xl"></i>
+                            <span>Upcoming infrastructure projects</span>
+                        </li>
+                    </ul>
+                    <button class="bg-secondary hover:bg-white text-white hover:text-primary font-medium py-3 px-8 rounded-md transition duration-300">
+                        <i class="fas fa-download mr-2"></i> Download Guide (PDF)
+                    </button>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Investment Guide" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">What Our Investors Say</h2>
+                <p class="text-lg text-accent max-w-2xl mx-auto">Hear from investors who've built wealth through our curated opportunities.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-light p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Investor" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Rajiv Malhotra</h4>
+                            <p class="text-gray-600">Portfolio Investor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Kartikeya Realty's investment advisory helped me diversify my portfolio with two pre-leased commercial properties that now give me consistent 9.5% returns. Their market insights are invaluable."</p>
+                    <div class="text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-light p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Investor" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Priya Khanna</h4>
+                            <p class="text-gray-600">NRI Investor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"As an NRI, I needed trustworthy partners to manage my investments. Kartikeya Realty not only found high-yield properties but handles everything from tenant management to tax filings. Highly recommended!"</p>
+                    <div class="text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisor CTA -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your Real Estate Portfolio?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Our investment advisors will help you identify the best opportunities based on your financial goals.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="about.html" class="bg-white hover:bg-primary text-secondary hover:text-white font-medium py-3 px-8 rounded-md transition duration-300">
+                    Book a Call with Advisor
+                </a>
+                <a id="cta" href="tel:+917091651137" class="bg-transparent hover:bg-white border-2 border-white text-white hover:text-secondary font-medium py-3 px-8 rounded-md transition duration-300">
+                    <i class="fas fa-phone mr-2"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="logo.jpeg" alt="Kartikeya Realty Logo" class="h-40 mb-4">
+                    <p class="mb-4">Your trusted partner for all real estate needs in Faridabad and NCR region.</p>
+                    <!-- <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary transition duration-300">Home</a></li>
+                        <li><a href="properties.html" class="hover:text-secondary transition duration-300">Properties</a></li>
+                        <li><a href="investor-zone.html" class="hover:text-secondary transition duration-300">Investor Zone</a></li>
+                        <li><a href="first-time-buyers.html" class="hover:text-secondary transition duration-300">First Time Buyers</a></li>
+                        <li><a href="leasing-services.html" class="hover:text-secondary transition duration-300">Leasing Services</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary transition duration-300">Blog</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition duration-300">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul id="contact-info" class="space-y-2">
+                        <!-- Dynamic contact info will be loaded here -->
+                        <li class="flex items-center">
+                            <i class="fas fa-spinner fa-spin mr-2 text-secondary"></i>
+                            <span>Loading contact information...</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe to get exclusive investment opportunities and market updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your Email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-accent">
+                        <button type="submit" class="bg-secondary hover:bg-white text-white hover:text-secondary px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+                <p>&copy; <span id="year"></span> Kartikeya Realty. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Investment card hover effect
+        const investmentCards = document.querySelectorAll('.investment-card');
+        investmentCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+
+        const year = document.getElementById('year');
+        year.innerHTML = new Date().getFullYear();
+
+        loadContactInfo();
+
+        async function loadContactInfo() {
+            try {
+                const response = await fetch('api/contact-info.php?active=1');
+                const data = await response.json();
+                
+                if (data.success && data.data) {
+                    updateContactDisplay(data.data);
+                    updateHeaderPhone(data.data.phone);
+                } else {
+                    console.error('Failed to load contact info');
+                }
+            } catch (error) {
+                console.error('Error loading contact info:', error);
+            }
+        }
+
+        // Update contact display in footer
+        function updateContactDisplay(contactData) {
+            const container = document.getElementById('contact-info');
+            const socialContainer = document.getElementById('social-links');
+            
+            container.innerHTML = '';
+            
+            // Display addresses
+            if (contactData.address) {
+                contactData.address.forEach(addr => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
+                            <span>${addr.value}</span>
+                        </li>
+                    `;
+                });
+            }
+            
+            // Display phones
+            if (contactData.phone) {
+                contactData.phone.forEach(phone => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-secondary"></i>
+                            <span>${phone.value}</span>
+                        </li>
+                    `;
+                });
+            }
+            
+            // Display emails
+            if (contactData.email) {
+                contactData.email.forEach(email => {
+                    container.innerHTML += `
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-secondary"></i>
+                            <span>${email.value}</span>
+                        </li>
+                    `;
+                });
+            }
+            
+            // Update social links
+            if (contactData.social) {
+                socialContainer.innerHTML = '';
+                contactData.social.forEach(social => {
+                    if (social.value && social.value !== '#') {
+                        const icon = getSocialIcon(social.label.toLowerCase());
+                        socialContainer.innerHTML += `
+                            <a href="${social.value}" target="_blank" class="text-white hover:text-secondary text-xl transition duration-300">
+                                <i class="${icon}"></i>
+                            </a>
+                        `;
+                    }
+                });
+            }
+        }
+
+        // Load contact information
+        async function loadContactInfo() {
+            try {
+                const response = await fetch('api/contact-info.php?active=1');
+                const data = await response.json();
+                if (data.success && data.data) {
+                    updateHeaderPhone(data.data.phone);
+                    updateContactDisplay(data.data);
+                } else {
+                    console.error('Failed to load contact info');
+                }
+            } catch (error) {
+                console.error('Error loading contact info:', error);
+            }
+        }
+
+        // Update header phone number
+        function updateHeaderPhone(phones) {
+            if (phones && phones.length > 0) {
+                const primaryPhone = phones[0];
+                const headerPhone = document.getElementById('header-phone');
+                const headerPhoneMob = document.getElementById('header-phone-mob');
+                const cta = document.getElementById('cta');
+                if (headerPhone) {
+                    headerPhone.href = `tel:${primaryPhone.value}`;
+                    headerPhoneMob.href = `tel:${primaryPhone.value}`;
+                    cta.href = `tel:${primaryPhone.value}`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
